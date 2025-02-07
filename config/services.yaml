@@ -6,6 +6,10 @@
 parameters:
 
 services:
+    App\Command\AddProductCommand:
+        tags: ['console.command']
+    App\Command\AddUserCommand:
+        tags: ['console.command']
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.

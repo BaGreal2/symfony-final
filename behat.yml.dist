@@ -1,0 +1,17 @@
+default:
+    suites:
+        default:
+            contexts:
+                - App\Tests\Behat\FeatureContext
+
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            bootstrap: tests/bootstrap.php
+        Behat\MinkExtension:
+            base_url: http://127.0.0.1:8000/
+            # or use "goutte"
+            default_session: symfony
+            javascript_session: selenium2
+            browser_name: chrome
+            symfony: ~
+            selenium2: ~
