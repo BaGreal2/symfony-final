@@ -41,7 +41,7 @@ cp .env.example .env
 Make sure your .env file contains the correct database connection details. For example:
 
 ```bash
-DATABASE_URL="mysql://root:password@127.0.0.1:3306/product_api"
+DATABASE_URL="postgresql://root:password@127.0.0.1:3306/product_api"
 ```
 
 Update the connection details with your actual database credentials and database name.
