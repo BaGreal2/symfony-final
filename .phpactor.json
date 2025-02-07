@@ -6,5 +6,7 @@
         "/vendor/**/tests/**/*",
         "/var/cache/**/*",
         "/vendor/composer/**/*"
-    ]
+    ],
+    "behat.enabled": true,
+    "behat.symfony.di_xml_path": "var/cache/test/App_KernelTestDebugContainer.xml"
 }
